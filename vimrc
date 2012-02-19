@@ -13,7 +13,6 @@ set numberwidth=4
 set autoindent
 
 set tabstop=4
-set expandtab
 set softtabstop=4
 set shiftwidth=4
 
@@ -32,5 +31,3 @@ syntax enable
 "Search
 set hlsearch
 set incsearch
-
-

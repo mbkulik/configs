@@ -1,12 +1,10 @@
 shell -${SHELL}
 
-caption always "%3n %t%? @%u%?%? [%h]%?%=%c"
-
-#caption always "%n (%t) "
-
 defscrollback 1024
 
 startup_message off
 
-hardstatus on
-hardstatus alwayslastline
+hardstatus on 
+hardstatus alwayslastline 
+
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W} %c %{g}]'
