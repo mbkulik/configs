@@ -1,15 +1,31 @@
-"no original vi emulation
 set nocompatible
+filetype off
 
-"backspace can delete previous chars
+"------------------------------------
+" vundle
+"------------------------------------
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'kien/ctrlp.vim'
+
+filetype plugin indent on
+
+"-----------------------------------
+" line numbers
+" ----------------------------------
+set number
+set numberwidth=3
+
+"----------------------------------
+" backspace can delete
+"----------------------------------
 set bs=2
 
-"line numbers
-set number
-
-"line numbering takes 5 spaces
-set numberwidth=4
-
+"----------------------------------
+" indentation
+"----------------------------------
 set autoindent
 
 set tabstop=4
@@ -22,14 +38,7 @@ set showmatch
 "visual aid instead of audio
 set vb t_vb=
 
-set ruler
-
-"Set color
-"set t_Co=256
 syntax enable
-set background=light
-colorscheme solarized
-
 
 "Search
 set hlsearch
