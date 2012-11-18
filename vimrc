@@ -3,20 +3,17 @@ filetype off
 
 "------------------------------------
 " vundle
+"
+" vim +BundleInstall +qall
 "------------------------------------
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
+Bundle 'myusuf3/numbers.vim'
 
 filetype plugin indent on
-
-"-----------------------------------
-" line numbers
-" ----------------------------------
-set number
-set numberwidth=3
 
 "----------------------------------
 " backspace can delete
@@ -27,6 +24,17 @@ set bs=2
 " indentation
 "----------------------------------
 set autoindent
+
+"----------------------------------
+" ctrlp
+"----------------------------------
+let g:ctrlp_working_path_mode = 'ra'
+
+"----------------------------------
+" numbers
+"----------------------------------
+nnoremap <F3> :NumbersToggle<CR>
+set numberwidth=3
 
 set tabstop=4
 set softtabstop=4
