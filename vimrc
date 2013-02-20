@@ -24,6 +24,7 @@ set bs=2
 " indentation
 "----------------------------------
 set autoindent
+set cindent
 
 "----------------------------------
 " ctrlp
@@ -39,6 +40,7 @@ set numberwidth=3
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set noexpandtab
 
 "quickly matches up brackets/brace etc
 set showmatch
@@ -51,3 +53,7 @@ syntax enable
 "Search
 set hlsearch
 set incsearch
+
+" Store temporary files in a central location
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
