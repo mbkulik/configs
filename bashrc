@@ -9,6 +9,6 @@ PS1='[\u@\h:\W]\$ '
 export PS1="\[\033[G\]$PS1"
 
 # bash completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-	. $(brew --prefix)/etc/bash_completion
+if [ -f /usr/local/etc/bash_completion ]; then
+	. /usr/local/etc/bash_completion
 fi
