@@ -12,6 +12,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'myusuf3/numbers.vim'
+Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on
 
@@ -41,6 +42,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set noexpandtab
+set textwidth=80
 
 "quickly matches up brackets/brace etc
 set showmatch
@@ -49,6 +51,9 @@ set showmatch
 set vb t_vb=
 
 syntax enable
+set background=dark
+colorscheme solarized
+
 
 "Search
 set hlsearch
