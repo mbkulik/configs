@@ -8,7 +8,6 @@ PS1='[\u@\h:\W]\$ '
 #removes ^C from long command lines
 export PS1="\[\033[G\]$PS1"
 
-# bash completion
-if [ -f /usr/local/etc/bash_completion ]; then
-	. /usr/local/etc/bash_completion
-fi
+#bash completion scripts
+. /usr/local/etc/bash_completion.d/brew_bash_completion.sh
+. /usr/local/etc/bash_completion.d/git-completion.bash

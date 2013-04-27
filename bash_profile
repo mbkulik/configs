@@ -1,7 +1,7 @@
 . ~/.bashrc
 
 #EDITOR
-export EDITOR='mvim'
+export EDITOR='subl -n -w'
 
 #PATH
 export PATH="/usr/local/opt/ruby/bin:$PATH:$HOME/bin"
