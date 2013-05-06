@@ -11,8 +11,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'mileszs/ack.vim'
 
 filetype plugin indent on
 
@@ -35,7 +34,7 @@ let g:ctrlp_working_path_mode = 'a'
 "----------------------------------
 " numbers
 "----------------------------------
-nnoremap <F3> :NumbersToggle<CR>
+set number
 set numberwidth=3
 
 set tabstop=4
@@ -51,9 +50,6 @@ set showmatch
 set vb t_vb=
 
 syntax enable
-set background=dark
-colorscheme solarized
-
 
 "Search
 set hlsearch
