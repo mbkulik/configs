@@ -11,7 +11,6 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
-Bundle 'mileszs/ack.vim'
 
 filetype plugin indent on
 
@@ -41,7 +40,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set noexpandtab
-set textwidth=80
+set colorcolumn=80
 
 "quickly matches up brackets/brace etc
 set showmatch
