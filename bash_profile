@@ -1,7 +1,10 @@
 . ~/.bashrc
 
 #EDITOR
-export EDITOR='vim'
+export EDITOR='mg'
 
 #PATH
-export PATH="/usr/local/opt/ruby/bin:$PATH:$HOME/bin"
+export PATH="$HOME/.rbenv/bin:$PATH:$HOME/bin"
+
+#rbenv
+eval "$(rbenv init -)"
