@@ -1,5 +1,7 @@
 
-;;
+;; disable menu bar
+(menu-bar-mode -1)
+
 (setq user-emacs-directory "~/.emacs.d/")
 
 ;; stop splash screen from showing
