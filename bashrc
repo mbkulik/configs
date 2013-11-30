@@ -1,6 +1,7 @@
 # aliases
 alias ls='ls -G'
 alias dvtm='dvtm -m ^a'
+alias dtach='dtach -A /tmp/dtach-session -r winch dvtm -m ^a'
 
 # bash prompt
 export PS1="[\u@\h:\W]\$ "
