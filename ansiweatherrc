@@ -1,4 +1,4 @@
 units:imperial
 symbols:true
 background:\033[00m
-forecast:3
+forecast:1
