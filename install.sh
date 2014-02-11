@@ -8,7 +8,3 @@ ln -sf $PWD/bash_profile $HOME/.bash_profile
 
 # emacs and mg (microemacs) configs
 ln -sf $PWD/emacs $HOME/.emacs
-ln -sf $PWD/mg $HOME/.mg
-
-#ansiweather
-ln -sf $PWD/ansiweatherrc $HOME/.ansiweatherrc
