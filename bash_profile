@@ -1,13 +1,13 @@
 . ~/.bashrc
 
 # EDITOR
-export EDITOR='mg'
+export EDITOR='emacs'
 
 # PATH
-export PATH="$HOME/.rbenv/bin:$PATH:$HOME/bin"
-
-# don't show homebrew icons 
-export HOMEBREW_NO_EMOJI=1
+export PATH="$PATH:$HOME/bin"
 
 # rbenv
-eval "$(rbenv init -)"
+if which rbenv > /dev/null; then
+    export HOMEBREW_NO_EMOJI=1
+    eval "$(rbenv init -)"
+fi
